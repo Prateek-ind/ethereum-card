@@ -1,45 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
-  <title>Frontend Mentor | NFT preview card component</title>
-  <link rel="stylesheet" href="style.css">
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  
-</head>
-<body>
-  <div class="container">
-    <div class="card">
-      <img src="./images/image-equilibrium.jpg" alt="">
-      <h2>Equilibrium #3429</h2>
-      <p>Our Equilibrium collection promotes balance and calm.</p>
-      <span class="eth"><i class="fa-brands fa-ethereum"></i>0.041 ETH</span>
-      <span class="days"><i class="fa-solid fa-clock"></i>3 days left</span>
-      <hr class="ruler">
-      <ul>
-        <li class="avatar"><img src="./images/image-avatar.png" ></li>
-        <li class="creation">Creation of </li>
-        <li class="jules">Jules Wyvern</li>
-      </ul>
-      <footer class="footer">
-        <div class="attribution">
-          <span class="attribution creation">Challenge by</span><a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-          <span class="attribution creation">Coded by</span> <a href="#">Prateek</a>.
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | NFT preview card component</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <img src="./images/image-equilibrium.jpg" alt="" class="nft-img" />
+        <h2>Equilibrium #3429</h2>
+        <p>Our Equilibrium collection promotes balance and calm.</p>
+        <div class="wrapper">
+          <div class="eth">
+            <i class="fa-brands fa-ethereum"></i>
+            <span>0.041 ETH</span>
+          </div>
+          <div class="days">
+            <img src="./images/icon-clock.svg" class="fa-clock" />
+            <span>3 days left</span>
+          </div>
         </div>
-      </footer>
-
+        <hr class="ruler" />
+        <ul>
+          <li><img src="./images/image-avatar.png" class="avatar" /></li>
+          <li class="creation">Creation of</li>
+          <li class="jules">Jules Wyvern</li>
+        </ul>
+        <footer class="footer">
+          <div class="attribution">
+            <span class="attribution creation">Challenge by</span
+            ><a
+              href="https://www.frontendmentor.io?ref=challenge"
+              target="_blank"
+              >Frontend Mentor</a
+            >. <span class="attribution creation">Coded by</span>
+            <a href="#">Prateek</a>.
+          </div>
+        </footer>
+      </div>
     </div>
-   
-
-  </div>
-  
-  
- 
-</body>
+  </body>
 </html>
