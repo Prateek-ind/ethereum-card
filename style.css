@@ -1,71 +1,92 @@
 *{
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 body{
-  font-size: 18px;
-  font-family: "outfit", sans-serif;
   
-  position: relative;
-}
-.container{
-  
-  min-width: 1440px;
-  height: 100vh;
-  background-color: hsl(217, 54%, 11%);
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 18px;
+  
+  background-color: hsl(217, 54%, 11%);
+  
+}
+.container{
+  
+  font-family: "outfit", sans-serif;
+  
+  background-color: hsl(217, 54%, 11%);
+  
   
   
 }
 .card{
-  width: 220px;
-  height: 390px;
-  border: 1px solid white;
+  max-width: 290px;
+  max-height: 600px;
+  
+  
   background-color: rgb(20, 37, 61);
   padding: 15px;
   border-radius: 15px;
   box-shadow: 0px 0px 9px 12px hsl(216deg 100% 7.55%)
 }
-.card img{
+.nft-img{
   width: 100%;
   border-radius: 5px;
+  cursor: pointer;
 }
+
+
+
 .card h2{
   color: white;
   font-size: 1rem;
+  cursor: pointer;
+  margin: 15px 0;
 }
 .card p{
   color: hsl(215, 51%, 70%);
   font-size: .8rem;
+  font-weight: 400;
+  margin: 15px 0;
 }
-.list1{
-  background-color: white;
+.wrapper{
+  display: flex;
+  justify-content: space-between;
 }
 .eth{
-  font-size: .8rem;
-  color: hsl(178, 100%, 50%);
+  font-size: .7rem;
+  color: rgb(0, 255, 247);
 }
-.fa-clock{
-  margin-right: 5px;
+ 
+.days{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: .7rem;
+  color: hsl(215, 51%, 70%);
+  font-weight:400;
+}
+.days img{
+  width:13px
+
 }
 .fa-ethereum{
   margin-right: 5px;
 }
-.days{
-  margin-left: 70px;
-  font-size: .8rem;
-  color: hsl(215, 51%, 70%);
-}
+
 .ruler{
   margin-top: 15px;
-  opacity: 10%;
+  margin-bottom: 10px;
+  opacity: 5%;
 }
 ul{
   display: flex;
   align-items: center;
-  padding: 0;
+  padding:0;
   
   font-size: .6rem;
   list-style-type: none;
@@ -73,8 +94,10 @@ ul{
   
 }
 .avatar{
-  width: 18px;
+  width:22px;
   margin-right: 15px;
+  border: 1px solid white;
+  border-radius: 14px;
 }
 .creation{
   color: white;
@@ -82,8 +105,9 @@ ul{
 }
 .jules{
   color: hsl(215, 51%, 70%);
- 
+  cursor: pointer;
 }
+
 .attribution { 
     font-size: 11px; text-align: center;
     
@@ -95,5 +119,17 @@ ul{
     
     position: absolute;
     bottom: 1px;
-    left: 46%;
+    left: auto;
 }
+/* Hover section */
+.jules:hover{
+  color: rgb(0, 255, 247);;
+}
+.card h2:hover{
+  color: rgb(0, 255, 247);;
+}
+
+.nft-img:hover {
+  opacity: .1;
+}
+
